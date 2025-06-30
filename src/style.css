@@ -1,0 +1,105 @@
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+}
+
+/* 1. Box-sizing dla wszystkich elementów */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Reset marginesów i paddingu */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
+/* 3. Ustawienia domyślne dla body */
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* 4. Linki bez podkreślenia i z kolorem dziedziczonym */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. Zdjęcia i obrazki responsywne */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 6. Ustawienie list */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* 7. Ustawienia dla przycisków */
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* 8. Formularze – bez dzikich styli */
+input,
+textarea,
+select {
+  font: inherit;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+/* 9. Lepsze wyglądanie nagłówków */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* 10. Kontener (opcjonalnie) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav {
+  display:flex;
+  justify-content: space-between;
+}
+
+.navbar-primery {
+  display: flex;
+  
+  }
+
+  .nav__list {
+    padding: 1rem;;
+  }
+
+  .logo {
+    padding: 1rem;
+  }
