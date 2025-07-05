@@ -88,6 +88,8 @@ h1, h2, h3, h4, h5, h6 {
   
   }
 
+
+
   .nav__list {
     padding: 1rem;;
   }
@@ -104,6 +106,45 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10rem 1rem;
     
   }
+
+  /* Przycisk hamburger – tylko na mobile */
+.hamburger {
+  display: none;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+/* Menu mobilne – początkowo ukryte */
+.navbar-primery {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-primery {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .navbar-primery.active {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 
   .heading {
     text-transform: uppercase;
@@ -143,7 +184,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   input[type=text], [type=email], .tekst {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
     background-color: #efefef;
     color: #666;
     border: 2px solid #ddd;
@@ -166,7 +209,9 @@ input[type=email]:focus,
 }
 
 input[type=submit] {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
     background-color: #36b03c;
     font-size: 20px;
     color: white;
@@ -203,4 +248,14 @@ input:focus::-webkit-input-placeholder {
   padding: 5rem;
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+.nav__list a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
 }
